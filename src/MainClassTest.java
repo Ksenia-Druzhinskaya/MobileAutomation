@@ -1,7 +1,20 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Locale;
+
 public class MainClassTest {
+
+    @Test
+    public void testGetClassString(){
+        MainClass mainClassObject = new MainClass();
+        String actualString = mainClassObject.getClassString();
+        String expectedFirstSubstring = "Hello";
+        String expectedSecondSubstring = "hello";
+
+        Assert.assertTrue("The string '" + actualString + "' does not contains 'Hello' or 'hello'",
+                actualString.contains(expectedFirstSubstring) || actualString.contains(expectedSecondSubstring));
+    }
 
     @Test
     public void testGetLocalNumber(){
