@@ -12,7 +12,7 @@ public class MainClassTest {
         String expectedFirstSubstring = "Hello";
         String expectedSecondSubstring = "hello";
 
-        Assert.assertTrue("The string '" + actualString + "' does not contains 'Hello' or 'hello'",
+        Assert.assertTrue("The string '" + actualString + "' does not contain 'Hello' or 'hello'",
                 actualString.contains(expectedFirstSubstring) || actualString.contains(expectedSecondSubstring));
     }
 
